@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><strong class="fs-1 fw-bolder">Dizi</strong>m</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Anasayfa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Diziler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Filmler</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Platform
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Exxen</a></li>
+                <li><a class="dropdown-item" href="#">Disney+</a></li>
+                <li><a class="dropdown-item" href="#">Amazon</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Netflix</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- film arama -->
+    <form class="d-flex mx-auto my-3 arama-form" role="search">
+      <input
+        class="form-control me-2"
+        type="search"
+        placeholder="Arama Yap..."
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-primary" type="submit">Ara</button>
+    </form>
+
+    <div class="arama-text mx-auto p-1">
+      <p>Günün Popüler İçeriği: <strong>Breaking Bad</strong></p>
+    </div>
+    <!-- trend diziler -->
+    <div class="bg-primary text-white">
+      <div class="container mt-5">
+        <h3 class="mt-3 p-2 text-center">Trend Diziler</h3>
+        <div class="dizi-card d-flex justify-content-evenly flex-wrap p-3 m-3">
+          <div
+            class="card trend-card bg-secondary text-white mb-2"
+            style="width: 10rem"
+          >
+            <img
+              src="img/resim1.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text text-center">
+                Yüzüklerin Efendisi: Güç Yüzükleri
+              </p>
+            </div>
+          </div>
+          <div
+            class="card trend-card bg-secondary text-white mb-2"
+            style="width: 10rem"
+          >
+            <img
+              src="img/resim2.avif"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Game of Thrones</p>
+            </div>
+          </div>
+          <div
+            class="card trend-card bg-secondary text-white mb-2"
+            style="width: 10rem"
+          >
+            <img
+              src="img/resim3.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Dexter</p>
+            </div>
+          </div>
+          <div
+            class="card trend-card bg-secondary text-white mb-2"
+            style="width: 10rem"
+          >
+            <img
+              src="img/resim4.avif"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Breaking Bad</p>
+            </div>
+          </div>
+          <div
+            class="card trend-card bg-secondary text-white mb-2"
+            style="width: 10rem"
+          >
+            <img
+              src="img/resim5.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Prison Break</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- güncel bölümler -->
+    <div class="container text-center">
+      <h3>Güncel Bölümler</h3>
+      <div class="row d-flex justify-content-evenly">
+        <div class="col-lg-3 col-md-6 d-flex justify-content-evenly mt-3">
+          <div class="card border-light mb-3" style="max-width: 18rem">
+            <div class="card-header"><h5>Tell Me Lies</h5></div>
+            <div class="card-body">
+              <p>2. Sezon 4. Bölüm</p>
+              <p class="card-text">2 saat önce</p>
+              <button class="btn btn-outline-secondary w-50">İzle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex justify-content-evenly mt-3">
+          <div class="card border-light mb-3" style="max-width: 18rem">
+            <div class="card-header"><h5>Konuşanlar</h5></div>
+            <div class="card-body">
+              <p>2. Sezon 150. Bölüm</p>
+              <p class="card-text">5 saat önce</p>
+              <button class="btn btn-outline-secondary w-50">İzle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex justify-content-evenly mt-3">
+          <div class="card border-light mb-3" style="max-width: 18rem">
+            <div class="card-header"><h5>Gibi</h5></div>
+            <div class="card-body">
+              <p>5. Sezon 13. Bölüm</p>
+              <p class="card-text">3 ay önce</p>
+              <button class="btn btn-outline-secondary w-50">İzle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex justify-content-evenly mt-3">
+          <div class="card border-light mb-3" style="max-width: 18rem">
+            <div class="card-header"><h5>Prens</h5></div>
+            <div class="card-body">
+              <p>2. Sezon 7. Bölüm</p>
+              <p class="card-text">4 ay önce</p>
+              <button class="btn btn-outline-secondary w-50">İzle</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-evenly">
+        <div class="col-lg-3 col-md-6 d-flex justify-content-evenly mt-3">
+          <div class="card border-light mb-3" style="max-width: 18rem">
+            <div class="card-header"><h5>Sokağın Çocukları</h5></div>
+            <div class="card-body">
+              <p>7. Sezon 8. Bölüm</p>
+              <p class="card-text">2 saat önce</p>
+              <button class="btn btn-outline-secondary w-50">İzle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex justify-content-evenly mt-3">
+          <div class="card border-light mb-3" style="max-width: 18rem">
+            <div class="card-header"><h5>Ru</h5></div>
+            <div class="card-body">
+              <p>1. Sezon 7. Bölüm</p>
+              <p class="card-text">4 gün önce</p>
+              <button class="btn btn-outline-secondary w-50">İzle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex justify-content-evenly mt-3">
+          <div class="card border-light mb-3" style="max-width: 18rem">
+            <div class="card-header"><h5>Mevzular</h5></div>
+            <div class="card-body">
+              <p>1. Sezon 14. Bölüm</p>
+              <p class="card-text">6 gün önce</p>
+              <button class="btn btn-outline-secondary w-50">İzle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex justify-content-evenly mt-3">
+          <div class="card border-light mb-3" style="max-width: 18rem">
+            <div class="card-header"><h5>Loki</h5></div>
+            <div class="card-body">
+              <p>1. Sezon 1. Bölüm</p>
+              <p class="card-text">10 gün önce</p>
+              <button class="btn btn-outline-secondary w-50">İzle</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-evenly">
+        <div class="col-lg-3 col-md-6 d-flex justify-content-evenly mt-3">
+          <div class="card border-light mb-3" style="max-width: 18rem">
+            <div class="card-header"><h5>Ayak İşleri</h5></div>
+            <div class="card-body">
+              <p>2. Sezon 23. Bölüm</p>
+              <p class="card-text">7 ay önce</p>
+              <button class="btn btn-outline-secondary w-50">İzle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex justify-content-evenly mt-3">
+          <div class="card border-light mb-3" style="max-width: 18rem">
+            <div class="card-header"><h5>Echo</h5></div>
+            <div class="card-body">
+              <p>3. Sezon 2. Bölüm</p>
+              <p class="card-text">1 saat önce</p>
+              <button class="btn btn-outline-secondary w-50">İzle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex justify-content-evenly mt-3">
+          <div class="card border-light mb-3" style="max-width: 18rem">
+            <div class="card-header"><h5>Kıyma</h5></div>
+            <div class="card-body">
+              <p>4. Sezon 8. Bölüm</p>
+              <p class="card-text">1 hafta önce</p>
+              <button class="btn btn-outline-secondary w-50">İzle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex justify-content-evenly mt-3">
+          <div class="card border-light mb-3" style="max-width: 18rem">
+            <div class="card-header"><h5>The Ark</h5></div>
+            <div class="card-body">
+              <p>2. Sezon 6. Bölüm</p>
+              <p class="card-text">3 hafta önce</p>
+              <button class="btn btn-outline-secondary w-50">İzle</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- trend filmler -->
+    <div class="bg-primary text-white">
+      <div class="container mt-5">
+        <h3 class="mt-3 p-2 text-center">Trend Filmler</h3>
+        <div class="dizi-card d-flex justify-content-evenly flex-wrap p-3 m-3">
+          <div
+            class="card trend-card bg-secondary text-white mb-2"
+            style="width: 10rem"
+          >
+            <img src="img/film1.jpg" class="card-img-top img-fluid" alt="..." />
+            <div class="card-body">
+              <p class="card-text text-center">Deadpool 3 ve Wolverine</p>
+            </div>
+          </div>
+          <div
+            class="card trend-card bg-secondary text-white mb-2"
+            style="width: 10rem"
+          >
+            <img
+              src="img/film2.avif"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text text-center">
+                Karateci Çocuk (The Karate Kid)
+              </p>
+            </div>
+          </div>
+          <div
+            class="card trend-card bg-secondary text-white mb-2"
+            style="width: 10rem"
+          >
+            <img
+              src="img/film3.avif"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text text-center">
+                Furiosa: Bir Mad Max Destanı (Furiosa: A Mad Max Saga)
+              </p>
+            </div>
+          </div>
+          <div
+            class="card trend-card bg-secondary text-white mb-2"
+            style="width: 10rem"
+          >
+            <img
+              src="img/film4.avif"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text text-center">İç Savaş (Civil War)</p>
+            </div>
+          </div>
+          <div
+            class="card trend-card bg-secondary text-white mb-2"
+            style="width: 10rem"
+          >
+            <img src="img/film5.jpg" class="card-img-top img-fluid" alt="..." />
+            <div class="card-body">
+              <p class="card-text text-center">Ters Yüz 2 (Inside Out 2)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- üyelik -->
+
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <img src="img/üyelik.png" class="üyelik-img" alt="" />
+      </div>
+      <div class="col-lg-6 col-md-12 üyelik-text">
+        <h4 class="mt-1">BluTV yıllık aboneliklerde ayda sadece ₺89.9</h4>
+        <p class="mt-1">
+          <i class="fa-regular fa-star"></i>
+          10.000 saatten fazla film, dizi ve daha fazlası. Tek tuşla iptal
+          edebilme kolaylığı.
+        </p>
+        <p class="mt-1">
+          <i class="fa-regular fa-star"></i>
+          Blutv Özel Yapım Diziler ve Programlar
+        </p>
+        <p class="mt-1">
+          <i class="fa-regular fa-star"></i>
+          Yerli ve Yabancı En Çok Sevilen Dizi ve Filmler
+        </p>
+        <p class="mt-1">
+          <i class="fa-regular fa-star"></i>
+          Altyazı & Dublaj ve HD kalitesiyle
+        </p>
+        <button class="btn btn-primary">Hemen Üye Ol</button>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="py-5 bg-primary mt-5 text-white">
+      <div class="container tex-center d-flex">
+        <span>All Rights Reservet. @2025</span>
+        <div class="footer-social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

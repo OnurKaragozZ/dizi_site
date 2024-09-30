@@ -1,0 +1,63 @@
+body {
+  box-sizing: border-box;
+}
+
+.arama-form {
+  width: 50%;
+}
+
+@media (max-width: 767.98px) {
+  .arama-form {
+    width: 80%;
+  }
+}
+
+.arama-text {
+  width: 50%;
+}
+
+@media (max-width: 767.98px) {
+  .arama-text {
+    width: 80%;
+  }
+}
+
+.trend-card {
+  transition: all 0.3s;
+}
+.trend-card:hover {
+  transform: scale(1.15);
+}
+.üyelik-img {
+  filter: blur(3px);
+  width: 100%;
+}
+.üyelik-text {
+  color: gray;
+  font-size: 18px;
+}
+.üyelik-text .fa-star {
+  font-size: large;
+  font-weight: bolder;
+}
+.üyelik-text h4 {
+  color: black;
+}
+.üyelik-text button {
+  width: 95%;
+  margin: 10px;
+  margin-top: 25px;
+
+  padding: 10px;
+}
+.footer-social {
+  margin-left: 50px;
+}
+.footer-social i {
+  margin: 5px;
+  cursor: pointer;
+  font-size: 24px;
+}
+.footer-social i:hover {
+  color: red;
+}
